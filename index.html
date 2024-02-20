@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title>URBAN STYLE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        fontFamily: {
+          sans: ['Monospace', 'sans-serif'],
+          mono: ['Lato', 'sans-serif'],
+        },
+      }
+    </script>
+<style>
+.menu-btn {
+  color: #000000;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .logo h1 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a{
+  display: block;
+  margin-left: 20px;
+  color: #000000;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .menu li .active{
+  border-bottom: 2px solid #000000;
+}
+
+.navbar .menu li a i{
+  color: #000000;
+}
+
+.navbar .menu li a:hover{
+  border-bottom: 2px solid #000000;
+}
+
+/* footer */
+footer {
+  height: 10vh;
+}
+
+footer p{
+  text-align: center;
+  line-height: 10vh;
+}
+
+/* responsive */
+
+@media (max-width: 820px) {
+  .menu-btn {
+  display: block;
+  z-index: 999;
+}
+
+.menu-btn i.active::before {
+  content: "\f00d";
+}
+
+.navbar .menu {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  top: 0;
+  background-color: white;
+  text-align: center;
+  padding-top: 80px;
+  transition: all 0.3s ease;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar .menu li a {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+}
+
+</style>
+</head>
+<body class="lg:bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 sm:bg-purple-500">
+
+    <nav class="sm:bg-green-400 text-black lg:bg-[#feed00] text-black">
+      <div class="logo">URBAN STYLE</div>
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a href=""><i class="fa-solid fa-user-large"></i></a></li>
+        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+      <!--for responsive button-->
+      <div class="menu-btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="lg-[#f97316] text-black bg:sm:[#a3e635] text-black">
+      <h2 class="font-bold text-3xl">About Us</h2>
+        
+      <p class="font-medium">Welcome to Urban Style, where fashion meets expression! At Urban Style, we believe that clothing is not just a means of covering the body; it's a canvas for self-expression, confidence, and individuality.</p>
+        
+      <h2 class="font-bold text-3xl">Our Story</h2>
+        
+      <p class="font-medium">Founded in 2024, Urban Style was born out of a passion for providing fashion-forward individuals with a curated selection of high-quality clothing that transcends trends. We strive to create a shopping experience that goes beyond mere transactions, fostering a community of style enthusiasts who embrace their unique tastes.</p>
+        
+      <h2 class="font-bold text-3xl">What Sets Us Apart</h2>
+        
+      <p class="font-medium">At Urban Style, we take pride in offering a diverse range of styles that cater to various tastes and preferences. Our carefully curated collections showcase a blend of timeless classics and cutting-edge trends, ensuring there's something for every fashion journey.</p>
+        
+      <h2 class="font-bold text-3xl">Quality and Sustainability</h2>
+        
+      <p class="font-medium">We are committed to delivering not only stylish but also sustainable fashion. Our dedication to quality craftsmanship and eco-friendly practices reflects our belief in making a positive impact on both your wardrobe and the planet.</p>
+        
+      <h2 class="font-bold text-3xl">Experience</h2>
+        
+      <p class="font-medium">Your satisfaction is our priority. Our customer support team is here to assist you at every step, from choosing the perfect outfit to ensuring a smooth shopping experience. We value your feedback and continuously strive to enhance our services to meet your expectations.</p>
+        
+      <h2 class="font-bold text-3xl">Join Our Community</h2>
+        
+      <p class="font-medium">Beyond being an online store, Urban Style is a community of fashion enthusiasts who celebrate individuality and self-expression. Connect with us on social media to stay updated on the latest trends, promotions, and exclusive community events.</p>
+        
+      <h3 class="font-bold text-3xl">Thank you for choosing Urban Style as your fashion destination. We look forward to being part of your style journey!</h3>
+      
+    </section>
+
+    <footer class="sm:bg-green-400 text-black lg:bg-[#feed00] text-black font-bold">
+        <p>&copy; 2024 URBAN STYLE. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
